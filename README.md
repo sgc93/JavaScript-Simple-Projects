@@ -17,7 +17,7 @@ Contributions are welcome! If you have a mini JavaScript project that you'd like
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/sgc93/JavaScript-Simple-Projects/blob/main/LICENSE) file for details.
 
 ## Acknowledgements
 

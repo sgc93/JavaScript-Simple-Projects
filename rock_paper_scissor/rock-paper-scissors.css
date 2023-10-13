@@ -1,0 +1,43 @@
+body {
+	background-color: rgba(0, 0, 0, 0.922);
+	font-family: "Courier New", Courier, monospace;
+	box-sizing: border-box;
+}
+
+.game-title {
+	color: aliceblue;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.throw-btn {
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 20px;
+	font-size: 35px;
+	cursor: pointer;
+}
+.js-status {
+	color: white;
+	font-size: larger;
+	font-weight: bold;
+}
+
+.js-move {
+	color: white;
+}
+
+.js-score {
+	color: white;
+}
+.btn {
+	border: none;
+	font-weight: 700;
+	padding: 7px 10px;
+	border-radius: 23px;
+	cursor: pointer;
+}
+.js-reset {
+	color: white;
+}

@@ -25,4 +25,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## About the Author
 
-[Smachew G.] - [Your Website or Portfolio URL] - [smachewgedefaw@gmail.com]
+Smachew G. - [Website](https://smachewgedefaw.netlify.app/) - [Email](smachewgedefaw@gmail.com)

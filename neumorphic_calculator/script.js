@@ -17,8 +17,8 @@ const divide = document.querySelector(".divide");
 const times = document.querySelector(".times");
 const minus = document.querySelector(".minus");
 const plus = document.querySelector(".plus");
-const equal = document.querySelector(".equal");
 const dot = document.querySelector(".dot");
+const equal = document.querySelector(".equal");
 
 const keys = [
 	one,
@@ -48,6 +48,7 @@ keys.forEach((key) => {
 
 clear.addEventListener("click", clearField);
 negate.addEventListener("click", negateValue);
+equal.addEventListener("click", calcValue);
 
 function clearField() {
 	input_field.value = 0;
@@ -55,4 +56,8 @@ function clearField() {
 
 function negateValue() {
 	input_field.value = -input_field.value;
+}
+
+function calcValue() {
+	input_field.value = eval(input_field.value);
 }

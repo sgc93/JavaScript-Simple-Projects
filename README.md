@@ -24,6 +24,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ## Acknowledgements
 
 - [SuperSimpleDev](https://youtube.com/playlist?list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&si=VhNPHp4PtYTEP4tE)
+- [codeSTACKr](https://youtube.com/playlist?list=PLkwxH9e_vrALRJKu7wfXby3MKeflhTu6B&si=jhjoxDOMjrgYpTe1)
 
 ## About the Author
 

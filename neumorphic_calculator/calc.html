@@ -9,16 +9,21 @@
 	<body>
 		<main>
 			<h2>Neumorphic Calculator</h2>
-			<input type="number" value="0" class="input" />
+			<input
+				type="text"
+				value="0"
+				class="input"
+				onkeydown="validateInput(event)"
+			/>
 			<div class="keys">
 				<button class="op__key clear">C</button>
 				<button class="op__key negate">+/-</button>
 				<button class="op__key module">%</button>
-				<button class="op__key devide">/</button>
+				<button class="op__key divide">/</button>
 				<button class="num_key one">1</button>
 				<button class="num_key two">2</button>
 				<button class="num_key three">3</button>
-				<button class="op_key times">x</button>
+				<button class="op_key times">*</button>
 				<button class="num_key four">4</button>
 				<button class="num_key five">5</button>
 				<button class="num_key six">6</button>

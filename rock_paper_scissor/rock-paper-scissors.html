@@ -8,15 +8,19 @@
 	</head>
 	<body>
 		<p class="game-title">Rock Paper Scissors</p>
-		<button onclick="makeMove('Rock')" class="throw-btn">🤜</button>
-		<button onclick="makeMove('Paper')" class="throw-btn">✋</button>
-		<button onclick="makeMove('Scissors')" class="throw-btn">✌️</button>
+		<div>
+			<button onclick="makeMove('Rock')" class="throw-btn">🤜</button>
+			<button onclick="makeMove('Paper')" class="throw-btn">✋</button>
+			<button onclick="makeMove('Scissors')" class="throw-btn">✌️</button>
+		</div>
+
 		<p class="js-status"></p>
 		<p class="js-move"></p>
 		<p class="js-score"></p>
-		<button onclick="resetScore()" class="btn btn-reset">Reset Score</button>
-		<button onclick="autoPlay()" class="btn btn-auto">Auto Play</button>
-
+		<div>
+			<button onclick="resetScore()" class="btn btn-reset">Reset Score</button>
+			<button onclick="autoPlay()" class="btn btn-auto">Auto Play</button>
+		</div>
 		<p class="js-reset"></p>
 
 		<script src="rock-paper-scissors.js"></script>

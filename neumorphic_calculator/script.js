@@ -61,3 +61,18 @@ function negateValue() {
 function calcValue() {
 	input_field.value = eval(input_field.value);
 }
+
+function validateInput(event) {
+	if (isValidKey(event.key)) {
+		console.log("valid  " + event.key);
+	} else {
+		console.log("Invalid  " + event.key);
+		event.preventDefault();
+	}
+}
+
+function isValidKey(key) {
+	if (/^\d+$/.test(key) || key === "Backspace" || key === " ") {
+		return true;
+	}
+}

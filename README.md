@@ -5,6 +5,7 @@ This repository contains a collection of small-scale, beginner-friendly JavaScri
 ## Projects
 
 1. **Rock Paper Scissors**: Simple rock paper scissor game, single player with computer, auto-play _ let the computer play itself
+2. **Neumoriphic Calculator**: Simple calculator with %, *, -, + and / operations, + _Neumorphic_ ui
 
 
 ## Usage

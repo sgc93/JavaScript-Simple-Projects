@@ -55,11 +55,18 @@ function clearField() {
 }
 
 function negateValue() {
-	input_field.value = -input_field.value;
+	input_field.value = -eval(input_field.value);
 }
 
 function calcValue() {
-	input_field.value = eval(input_field.value);
+	try {
+		input_field.value = eval(input_field.value);
+	} catch (error) {
+		input_field.value = "E^error";
+		setTimeout(() => {
+			input_field.value = "0";
+		}, 500);
+	}
 }
 
 function validateInput(event) {

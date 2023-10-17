@@ -13,6 +13,10 @@ const renderData = (data) => {
     `;
 };
 
+const renderError = (err) => {
+	resultDiv.innerHTML = `<p class="error">${err}</p>`;
+};
+
 // with tradational XMLHttpRequest()
 
 // const defineWord = (word) => {
@@ -35,20 +39,15 @@ const renderData = (data) => {
 const findWord = (word) => {
 	//make a GET request
 	fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
-		.then((response) => {
-			if (response.status < 200 || response >= 300) {
-				throw new Error("word is not found");
-			} else if (!response.ok) {
-				throw new Error("Network connection error!");
-			}
-			return response.json();
-		})
+		.then((response) => response.json())
 		.then((parsedData) => {
 			const [data] = parsedData;
-			console.log(data);
 			renderData(data);
 		})
-		.catch((err) => alert(err));
+		.catch((err) => {
+			const error = `Something went wrong 🤕🤕🤕${err.message}, pleas try again!`;
+			renderError(error);
+		});
 };
 
 btn.addEventListener("click", () => {

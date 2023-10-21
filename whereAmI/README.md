@@ -43,5 +43,7 @@ const getLocationName = function (latitude, longitude) {
   ```
     https://geocode.xyz/[latitude],[longitude]?json=1
   ```
-- Example: to get definition of English word `hello`, you can send request to :-
-  `https://geocode.xyz/${latitude},${longitude}?json=1`
+- Example: to do a reverse geocoding with string variables `latitued` and `longitude`, you can send request to :-
+  ```
+  https://geocode.xyz/${latitude},${longitude}?json=1
+  ```

@@ -12,6 +12,9 @@ This repository contains a collection of small-scale, beginner-friendly JavaScri
 3. **Simple English Word Dictionary**: with asynchronous javascript<br><br><br>
    ![Screenshot-Project3](https://github.com/sgc93/JavaScript-Simple-Projects/blob/main/simple_dictionary/screenshot.png) <br><br>
 
+4. **Location Finder**: Promises + reverse geocoding<br><br><br>
+   ![Screenshot-Project4](https://github.com/sgc93/JavaScript-Simple-Projects/blob/main/whereAmI/whereAmI.png) <br><br>
+
 ## Usage
 
 Each project is contained within its own directory along with a dedicated README file, providing specific instructions on how to run the project and any additional information necessary for understanding and implementation.

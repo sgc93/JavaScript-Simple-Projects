@@ -1,6 +1,6 @@
 body {
 	color: green;
-	background-color: aliceblue;
+	background-color: #f0f8ff;
 	font-family: sans-serif;
 	box-sizing: border-box;
 }
@@ -44,6 +44,10 @@ main {
 
 .result {
 	font-weight: 700;
+}
+.result span {
+	color: darkgreen;
+	font-weight: 900;
 }
 
 .more-btn {

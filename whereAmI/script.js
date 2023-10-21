@@ -7,7 +7,7 @@ const moreP = document.querySelector(".more");
 const resultP = document.querySelector(".result");
 const tellerDiv = document.getElementById("teller");
 const askBtn = document.querySelector(".ask-btn");
-const moreBtn = document.querySelector("more-btn");
+const moreBtn = document.getElementById("moreBtn");
 
 const getLocationCordinates = function () {
 	return new Promise((resolve, reject) => {
@@ -21,9 +21,12 @@ const getLocationCordinates = function () {
 
 const displayResult = (data, type) => {
 	if (type === "error") {
-		placeSpan.innerHTML = "...";
+		tellerDiv.classList.remove("teller");
+		tellerDiv.classList.add("teller-error");
+		resultP.innerHTML = `Ops, Something went wrong 😔 ${data}.`;
 	} else {
 		placeSpan.innerHTML = data;
+		moreBtn.classList.remove("hidden");
 	}
 };
 
@@ -36,16 +39,16 @@ const getLocationName = function (latitude, longitude) {
 			return response.json();
 		})
 		.then((parsedData) => {
-			console.log(`API Error: ${parsedData.error}.`);
-			if (parsedData.error) {
-				throw new Error(`API Error: ${parsedData.error}.`);
+			const city = [parsedData][0].city;
+			const country = [parsedData][0].country;
+			if (city === "Throttled! See geocode.xyz/pricing") {
+				console.log(`Eror: ${city}`);
+				throw new Error(`API Error`);
 			}
-			const data = [parsedData][0];
-			displayResult(data.city, "data");
+			displayResult(`${city}, ${country}.`, "data");
 		})
 		.catch((err) => {
-			displayResult(err, "error");
-			console.log(err);
+			displayResult(err.message, "error");
 		});
 };
 
@@ -55,9 +58,7 @@ function whereAmI() {
 			getLocationName(position.coords.latitude, position.coords.longitude);
 		})
 		.catch((err) => {
-			tellerDiv.classList.remove("teller");
-			tellerDiv.classList.add("teller-error");
-			resultP.innerHTML = `Ops, Something went wrong 😔 ${err.message}.`;
+			displayResult(err.message, "error");
 		});
 	console.log("fetching data ...");
 }

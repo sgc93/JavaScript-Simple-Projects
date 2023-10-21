@@ -4,15 +4,23 @@ This repository contains a collection of small-scale, beginner-friendly JavaScri
 
 ## Projects
 
-1. **Rock Paper Scissors**: Simple rock paper scissor game, single player with computer, auto-play \_ let the computer play itself <br><br><br>
+1. **Rock Paper Scissors**: Simple rock paper scissor game, single player with computer, auto-play \_ let the computer play itself <br>
+      [Check](https://github.com/sgc93/JavaScript-Simple-Projects/tree/main/rock_paper_scissor)
+<br><br>
    ![](https://github.com/sgc93/JavaScript-Simple-Projects/blob/main/rock_paper_scissor/screenshot.png) <br><br>
-2. **Neumoriphic Calculator**: Simple calculator with %, \*, -, + and / operations, + _Neumorphic_ ui <br><br><br>
+2. **Neumoriphic Calculator**: Simple calculator with %, \*, -, + and / operations, + _Neumorphic_ ui <br>
+      [Check](https://github.com/sgc93/JavaScript-Simple-Projects/tree/main/neumorphic_calculator)
+<br><br>
    ![Screenshot-Project2](https://github.com/sgc93/JavaScript-Simple-Projects/blob/main/neumorphic_calculator/calc_screenshot.png) <br><br>
 
-3. **Simple English Word Dictionary**: with asynchronous javascript<br><br><br>
+3. **Simple English Word Dictionary**: with asynchronous javascript <br>
+      [Check](https://github.com/sgc93/JavaScript-Simple-Projects/tree/main/simple_dictionary)
+<br><br>
    ![Screenshot-Project3](https://github.com/sgc93/JavaScript-Simple-Projects/blob/main/simple_dictionary/screenshot.png) <br><br>
 
-4. **Location Finder**: Promises + reverse geocoding<br><br><br>
+4. **Location Finder**: Promises + reverse geocoding <br>
+      [Check](https://github.com/sgc93/JavaScript-Simple-Projects/tree/main/whereAmI)
+<br><br>
    ![Screenshot-Project4](https://github.com/sgc93/JavaScript-Simple-Projects/blob/main/whereAmI/whereAmI.png) <br><br>
 
 ## Usage

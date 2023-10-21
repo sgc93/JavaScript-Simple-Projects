@@ -15,13 +15,18 @@ const getLocationCordinates = function () {
 
 const getLocationName = function (latitude, longitude) {
 	fetch(`https://geocode.xyz/${latitude},${longitude}?geoit=json`)
-		.then((response) => response.json())
+		.then((response) => {
+			if (!response.ok) {
+				throw new Error("error happend");
+			}
+			return response.json();
+		})
 		.then((parsedData) => {
 			const data = [parsedData][0];
-			const city = data.city;
-			const country = data.country;
+			console.log(data);
+			placeSpan.innerHTML = `${data.city},${data.country}`;
 		})
-		.catch((err) => console.error(err));
+		.catch((err) => console.log(err));
 };
 
 function whereAmI() {
@@ -30,9 +35,6 @@ function whereAmI() {
 			const latitude = position.coords.latitude;
 			const longitude = position.coords.longitude;
 			console.log(position.coords);
-			console.log(
-				`coordinates:- lat = ${position.coords.latitude}, long = ${position.coords.longitude}`
-			);
 			getLocationName(latitude, longitude);
 		})
 		.catch((err) => console.log(err));

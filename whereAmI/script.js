@@ -4,6 +4,8 @@
 
 const placeSpan = document.querySelector(".place");
 const moreP = document.querySelector(".more");
+const resultP = document.querySelector(".result");
+const tellerDiv = document.getElementById("teller");
 const askBtn = document.querySelector(".ask-btn");
 const moreBtn = document.querySelector("more-btn");
 
@@ -50,12 +52,13 @@ const getLocationName = function (latitude, longitude) {
 function whereAmI() {
 	getLocationCordinates()
 		.then((position) => {
-			const latitude = position.coords.latitude;
-			const longitude = position.coords.longitude;
-			console.log(position.coords);
-			getLocationName(latitude, longitude);
+			getLocationName(position.coords.latitude, position.coords.longitude);
 		})
-		.catch((err) => console.log(err));
+		.catch((err) => {
+			tellerDiv.classList.remove("teller");
+			tellerDiv.classList.add("teller-error");
+			resultP.innerHTML = `Ops, Something went wrong 😔 ${err.message}.`;
+		});
 	console.log("fetching data ...");
 }
 
